@@ -22,6 +22,6 @@ jobs:
       - name: Deploy to Staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain labored-library.surge.sh
-        env: 
+        env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
