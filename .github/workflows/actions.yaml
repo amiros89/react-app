@@ -12,7 +12,7 @@ jobs:
           assignees: "amiros89"
       - run: |
           echo ${{ steps.issue.outputs.issue }}
-      - uses: ./.github/actions/hello
+      - uses: ./.github/actions/hello-from-docker
         id: hello
         with:
           who-to-greet: "World"
